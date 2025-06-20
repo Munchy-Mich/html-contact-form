@@ -7,60 +7,65 @@
 </head>
 <body>
     <h1>Contact Us</h1>
-    <form action="#" method="post"></form>
-  <form>
-    <label for="fullname">Full Name:</label><br>
-    <input type="text" id="fullname" name="fullname" required><br><br> 
-    <label for="email">Email Address:</label><br>
-    <input type="email" id="email" name="email" required><br><br>
-    <label for="phone">Phone Number:</label><br>
-    <input type="tel" id="phone" name="phone" required><br><br>
-    <div>
-        <a>How did you hear about us?</a><br>
-        <input type="radio" id="socialMedia" name="source" value="social media">
-        <label for="socialMedia">Social Media</label><br>
+    <form action="https://formsubmit.co/michelleamanze@gmail.com" 
+            method="POST" enctype="multipart/form-data" target="_blank"> 
+            <!-- CAPTCHA to prevent spam --> 
+            <input type="hidden" name="_captcha" value="true"> 
+            <!-- Redirect to thank-you page -->
+            <input type="hidden" name="_next" value="https://alzunelak.github.io/my-profile-page/Thankyou.html">
+    
+            <label for="fullname">Full Name:</label><br>
+            <input type="text" id="fullname" name="fullname" required><br><br> 
+            <label for="email">Email Address:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+            <label for="phone">Phone Number:</label><br>
+            <input type="tel" id="phone" name="phone" required><br><br>
+        <div>
+            <a>How did you hear about us?</a><br>
+            <input type="radio" id="socialMedia" name="source" value="social media">
+            <label for="socialMedia">Social Media</label><br>
           
-        <input type="radio" id="friend" name="source" value="friend">
-        <label for="friend">Friend/Family</label><br>
+            <input type="radio" id="friend" name="source" value="friend">
+            <label for="friend">Friend/Family</label><br>
             
-        <input type="radio" id="google" name="source" value="google">
-        <label for="google">Google Search</label><br>
+            <input type="radio" id="google" name="source" value="google">
+            <label for="google">Google Search</label><br>
             
-        <input type="radio" id="other" name="source" value="other">
-        <label for="other">Other</label><br><br>
-    </div>
-    <div>
-        <a>What services are you interested in?</a><br>
-        <input type="checkbox" id="webDesign" name="services" value="web design">
-        <label for="webDesign">Web Design</label><br>
-            
-        <input type="checkbox" id="webDevelopment" name="services" value="web development">
-        <label for="webDevelopment">Web Development</label><br>
-            
-        <input type="checkbox" id="mobileApps" name="services" value="mobile apps">
-        <label for="mobileApps">Mobile Apps</label><br>
-            
-        <input type="checkbox" id="consulting" name="services" value="consulting">
-        <label for="consulting">Tech Consulting</label><br><br>
-    </div>
-    <div>
-        <label for="priority">Priority Level:</label><br>
-        <select id="priority" name="priority" required>
-            <option value="" disabled selected>-- Please select --</option>
-            <option value="low">Low</option>
-            <option value="medium">Medium</option>
-            <option value="high">High</option>
-            <option value="urgent">Urgent</option>
-        </select><br><br>
-    </div>
-    <div>
-        <label for="message">Message:</label><br>
-        <textarea id="message" name="message" rows="5" cols="50" placeholder="Please enter your message here..." required></textarea><br><br>
-    </div>
-    <div>
-        <input type="submit" value="Send Message">
-        <input type="reset" value="Clear Form">
-    </div>
-  </form>  
+            <input type="radio" id="other" name="source" value="other">
+            <label for="other">Other</label><br><br>
+        </div>
+        <div>
+            <a>What services are you interested in?</a><br>
+            <input type="checkbox" id="webDesign" name="services" value="web design">
+            <label for="webDesign">Web Design</label><br>
+                
+            <input type="checkbox" id="webDevelopment" name="services" value="web development">
+            <label for="webDevelopment">Web Development</label><br>
+                
+            <input type="checkbox" id="mobileApps" name="services" value="mobile apps">
+            <label for="mobileApps">Mobile Apps</label><br>
+                
+            <input type="checkbox" id="consulting" name="services" value="consulting">
+            <label for="consulting">Tech Consulting</label><br><br>
+        </div>
+        <div>
+            <label for="priority">Priority Level:</label><br>
+            <select id="priority" name="priority" required>
+                <option value="" disabled selected>-- Please select --</option>
+                <option value="low">Low</option>
+                <option value="medium">Medium</option>
+                <option value="high">High</option>
+                <option value="urgent">Urgent</option>
+            </select><br><br>
+        </div>
+        <div>
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" rows="5" cols="50" placeholder="Please enter your message here..." required></textarea><br><br>
+            </div>
+            <div>
+            <input type="submit" value="Send Message">
+            <input type="reset" value="Clear Form">
+        </div>
+    </form>
 </body>
 </html>
